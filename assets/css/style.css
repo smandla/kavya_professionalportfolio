@@ -14,7 +14,7 @@ body {
   color: white;
   overflow-x: hidden;
 }
-header {
+.header {
   position: fixed;
   top: 0;
   /* padding: 1rem; */
@@ -27,26 +27,17 @@ header {
   z-index: 1000;
 }
 
-nav {
-  /* background-color: red; */
-  /* width: 100%; */
-  /* display: flex; */
-}
-a {
+.header a {
   text-decoration: none;
   color: white;
-  /* align-items: center; */
-  /* margin: 1rem; */
-  /* padding: 0 -10px 0 0; */
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   padding: 8px;
   margin: 1rem;
 }
 
-a:hover {
-  background-color: var(--light-color);
-  /* padding: 10px; */
+.header a:hover {
+  background-color: var(--dark-color);
   color: black;
   border-radius: 16px;
 }
@@ -54,14 +45,26 @@ nav:first-child a {
   border-radius: 32px;
   padding: 10px;
 }
+.contact_details {
+  background-color: var(--light-color);
+  border-radius: 16px;
+  padding: 4rem;
+  display: flex;
+  /* display: table; */
+  margin: 0 auto;
+  /* left: 50%; */
+  width: fit-content;
+  justify-content: center;
+}
+.contact_details section {
+  display: flex;
+  flex-direction: column;
+}
 .main_image img {
   width: 100%;
   background-size: cover;
 }
 
-#contactme {
-  background-color: red;
-}
 #aboutme article {
   display: flex;
   align-items: center;
@@ -83,6 +86,7 @@ nav:first-child a {
   overflow: inherit;
   text-overflow: ellipsis;
 }
+
 .profile-image {
   height: 500px;
   border-radius: 16px;
@@ -137,18 +141,20 @@ nav:first-child a {
   width: 70%;
   float: right;
 }
-.resume_section button {
+.project_link {
   background-color: var(--dark-color);
   border: none;
   padding: 10px;
   margin: 1rem;
   color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
+  text-decoration: none;
 }
-.resume_section button:hover {
+.project_link:hover {
   cursor: pointer;
   opacity: 0.7;
 }
+
 .project_cards {
   background-color: var(--dark-color);
   display: flex;
@@ -222,17 +228,12 @@ nav:first-child a {
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* left: 3%; */
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   justify-content: center;
   align-items: center;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.8); /* Black see-through */
-  color: #f1f1f1;
-  /* width: 750px; */
   transition: 0.5s ease;
   opacity: 0;
   margin: 1rem;
@@ -245,5 +246,4 @@ nav:first-child a {
 }
 .project_card:hover .overlay {
   opacity: 1;
-  cursor: pointer;
 }
