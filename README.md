@@ -29,7 +29,7 @@ This portfolio includes an about me, projects, and contact me section. Users can
 
 ### Website Demo
 
-![alt text](assets/demo1.gif)
+![alt text](assets/demo.gif)
 
 ## Credits
 
