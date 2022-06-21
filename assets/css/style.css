@@ -20,9 +20,55 @@ a {
   text-decoration: none;
   color: white;
 }
+/*** Common Styles ***/
 
+/* Background element */
+.section_background {
+  position: relative;
+  display: block;
+  width: 90%;
+  background-color: var(--dark-color);
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+/* Button Style*/
+.button {
+  background-color: var(--dark-color);
+  border: none;
+  padding: 10px;
+  margin: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.line_break {
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 30px;
+}
+/* Section Title Styling */
+.line_break hr {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--light-color);
+}
+.left {
+  width: 10%;
+  float: left;
+}
+.right {
+  width: 70%;
+  float: right;
+}
 /** Header Section **/
-
 .header {
   position: fixed;
   top: 0;
@@ -36,34 +82,29 @@ a {
   background-color: black;
   z-index: 1000;
 }
-
-.header a {
+.header .name {
+  padding-left: 10px;
+}
+.nav_links a {
   text-decoration: none;
   color: white;
   text-align: center;
-  padding: 8px;
-  /* margin: 10px; */
+  padding: 10px;
 }
-.header .name {
-  padding-left: 10px;
-  /* margin: 0 auto; */
-  /* background-color: green; */
-}
-.header a:hover {
+.nav_links a:hover {
   background-color: var(--dark-color);
   color: black;
   border-radius: 16px;
 }
-.nav_links:first-child a {
-  border-radius: 32px;
-  padding: 10px;
-}
-/* Allows for site to start after height of header so all information can be seen*/
+
+/* Allows for site to start after height of header so all information can be seen */
 .blank_header {
   top: 0;
   width: 100%;
   height: 80px;
 }
+
+/** Main Image Section **/
 .main_image {
   position: relative;
 }
@@ -71,22 +112,122 @@ a {
   width: 100%;
   background-size: cover;
 }
+
+/** About Me Section **/
+.profile-details {
+  position: relative;
+  width: 90%;
+  background-color: var(--dark-color);
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.profile-details .info_block {
+  background-color: #1e9ba7;
+  width: 50%;
+  border: none;
+  padding: 1rem;
+  border-radius: 16px;
+  margin: 1rem;
+}
+/* Name title in About Me Section */
+.profile-details h1 {
+  color: white;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.36em;
+  text-align: center;
+  align-items: center;
+}
+/* paragraph section of About Me section  */
+.profile-details p {
+  font-size: 19px;
+  text-overflow: ellipsis; /* Doesn't allow for overflow and makes text fall into ellipsis */
+}
+
+/* Social Media Icons Styling*/
+.media_links a {
+  padding: 10px;
+}
+.media_links a:hover {
+  color: black;
+  opacity: 0.7;
+}
+
+/* Section to shrink profile image  */
+.profile_image_section {
+  width: 50%;
+}
+.profile-image {
+  width: 70%;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+/** Projects Section **/
+.project_cards {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  position: relative;
+  padding: 10px;
+}
+
+.project_card img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.project_card {
+  position: relative;
+}
+/* Styling only the first project_card class */
+.project_card:first-child {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin: 0 auto;
+}
+/* Styling the last 4 project_card classes */
+.project_card:nth-last-child(-n + 4) {
+  grid-row-start: 2;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+  opacity: 0;
+  margin: 10px;
+  color: white;
+  background-color: var(--light-color);
+  border-radius: 16px;
+}
+.project_card:hover .overlay {
+  opacity: 1;
+}
+
+/** Contact Me Section **/
 .contact_details {
   background-color: var(--light-color);
   border-radius: 16px;
-  /* padding: 4rem; */
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: fit-content;
-  /* justify-content: space-between; */
   align-items: center;
   padding: 1rem;
 }
-/* .contact_details section {
-  display: flex;
-  flex-direction: column;
-} */
+
 .contact_details label {
   font-size: 25px;
 }
@@ -101,129 +242,8 @@ a {
   border-radius: 32px;
   color: black;
 }
-.media_links a {
-  /* margin: 10px; */
-  padding: 10px;
-}
-.media_links a:hover {
-  /* background-color: var(--dark-color); */
-  color: black;
-  opacity: 0.7;
-  /* border-radius: 32px; */
-}
-.profile-image {
-  width: 70%;
-  /* height: 500px; */
-  border-radius: 2rem;
-  padding: 1rem;
-}
-.profile-details {
-  position: relative;
-  width: 90%;
-  background-color: var(--dark-color);
-  margin: 0 auto;
-  justify-content: center;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-.profile-details div {
-  background-color: #1e9ba7;
-  width: 50%;
-  border: none;
-  padding: 1rem;
-  border-radius: 16px;
-  /* justify-content: center; */
-  margin: 1rem;
-}
-.profile-details h1 {
-  color: white;
-  font-size: 25px;
-  line-height: 38px;
-  letter-spacing: 0.36em;
-  text-align: center;
-  align-items: center;
-}
-.profile-details p {
-  font-size: 19px;
-  text-overflow: ellipsis;
-}
-.profile_image_section {
-  width: 50%;
-}
-.line_break {
-  margin: 3rem 0;
-  text-align: center;
-  font-size: 30px;
-  /* color: white; */
-}
-.line_break hr {
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid var(--light-color);
-}
-.left {
-  width: 10%;
-  float: left;
-}
-.right {
-  width: 70%;
-  float: right;
-}
-.project_link {
-  background-color: var(--dark-color);
-  border: none;
-  padding: 10px;
-  margin: 1rem;
-  color: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  text-decoration: none;
-}
-.project_link:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-.project_details {
-  position: relative;
-  display: block;
-  width: 90%;
-  background-color: var(--dark-color);
-  margin: 0 auto;
-  justify-content: center;
-  border-radius: 16px;
-  padding: 1rem;
-}
-.project_cards {
-  background-color: var(--light-color);
-  display: grid;
-  grid-template-rows: 1fr min-content;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  position: relative;
-  /* left: 10%; */
-  padding: 10px;
-  /* width: 100%; */
-}
-.project_card {
-  position: relative;
-}
-.project_card img {
-  max-width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
 
-.project_card:first-child {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  margin: 0 auto;
-}
-.project_card:nth-last-child(-n + 4) {
-  grid-row-start: 2;
-}
-
+/** Once screen size is below 992px... eseentially everything gets centered **/
 @media screen and (max-width: 992px) {
   .header {
     flex-direction: column;
@@ -251,7 +271,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: fit-content; */
   }
   .project_card {
     margin: 0 auto;
@@ -261,8 +280,6 @@ a {
   .project_card:nth-last-child(-n + 4) {
     width: 85%;
     height: 85%;
-    /* width: 200px;
-    height: 200px; */
   }
 
   .profile-image {
@@ -278,28 +295,4 @@ a {
     width: 50%;
     float: right;
   }
-}
-
-.overlay {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s ease;
-  opacity: 0;
-  margin: 1rem;
-  color: white;
-  padding: 20px;
-  text-align: left;
-  overflow-block: hidden;
-  background-color: var(--light-color);
-  border-radius: 16px;
-}
-.project_card:hover .overlay {
-  opacity: 1;
 }
