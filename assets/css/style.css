@@ -49,12 +49,12 @@ a {
   opacity: 0.7;
 }
 
+/* Section Title Styling */
 .line_break {
   margin: 3rem 0;
   text-align: center;
   font-size: 30px;
 }
-/* Section Title Styling */
 .line_break hr {
   margin-left: auto;
   margin-right: auto;
@@ -148,15 +148,6 @@ a {
   text-overflow: ellipsis; /* Doesn't allow for overflow and makes text fall into ellipsis */
 }
 
-/* Social Media Icons Styling*/
-.media_links a {
-  padding: 10px;
-}
-.media_links a:hover {
-  color: black;
-  opacity: 0.7;
-}
-
 /* Section to shrink profile image  */
 .profile_image_section {
   width: 50%;
@@ -227,20 +218,13 @@ a {
   align-items: center;
   padding: 1rem;
 }
-
-.contact_details label {
-  font-size: 25px;
-}
-.contact_details a {
+/* Social Media Icons Styling*/
+.media_links a {
   padding: 1rem;
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
 }
-.contact_details a:hover {
-  background-color: var(--dark-color);
-  border-radius: 32px;
+.media_links a:hover {
   color: black;
+  opacity: 0.7;
 }
 
 /** Once screen size is below 992px... eseentially everything gets centered **/
@@ -250,7 +234,6 @@ a {
     justify-content: center;
     height: 150px;
   }
-
   .blank_header {
     height: 150px;
   }
@@ -259,14 +242,10 @@ a {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .profile-details div {
+  .profile-details .info_block {
     width: 50%;
   }
 
-  #aboutme p {
-    font-size: 15px;
-    text-overflow: ellipsis;
-  }
   .project_cards {
     display: flex;
     flex-direction: column;

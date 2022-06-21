@@ -23,7 +23,7 @@ This portfolio includes an about me, projects, and contact me section. Users can
 
 ## Deployed Link
 
-[Link]()
+[Link](https://smandla.github.io/kavya_professionalportfolio/)
 
 ## Usage
 
