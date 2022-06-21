@@ -16,8 +16,8 @@
   </head>
   <body>
     <header class="header">
-      <h1>kavya mandla</h1>
-      <nav>
+      <h1 class="name">kavya mandla</h1>
+      <nav class="nav_links">
         <a href="#aboutme">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contactme">Contact Me</a>
@@ -38,7 +38,7 @@
       <article class="profile-details">
         <div>
           <h1>Hi, It's Kavya!</h1>
-          <p>
+          <!-- <p>
             Junior Front End Engineer with experience in React, HTML/CSS,
             JavaScript, Node.JS, MERN stack. Currently, I am working on a Wordle
             Clone using the React framework. Outside of programming, I love to
@@ -50,14 +50,12 @@
             <a href="./assets/kavya_mandla_2022.pdf" download >
               <button class="project_link">Download Resume</button>
             </a>
-          </section>
+          </section> -->
         </div>
-        <section>
+        <!-- <section>
           <img src="./assets/images/profile.jpeg" class="profile-image" />
-        </section>
-        <!-- <section class="profile_image">
-          <img src="./assets/images/profile.jpeg" />
         </section> -->
+    
       </article>
     </section>
     <section id="projects">
@@ -66,7 +64,8 @@
         <span class="section_title"> Projects </span>
         <hr class="right1" />
       </div>
-      <div class="project_cards">
+      <article class="project_details">
+       <div class="project_cards">
         <section class="project_card">
           <img src="./assets/images/wordle.png" />
           <span class="overlay">
@@ -80,16 +79,28 @@
           </span>
         </section>
         <section class="project_card">
-          <img src="./assets/images/comfort2go.png" />
+          <img src="./assets/images/mp1.png" />
           <span class="overlay">
-            <h2>Wordle</h2>
-            <h3>React</h3>
+            <h2>Landing Page</h2>
+            <h3>HTML/CSS</h3>
             <a
               href="https://blissful-rosalind-a3611c.netlify.app/"
               class="project_link"
               >Go To Project</a
             >
           </span>
+        </section>
+        <section class="project_card">
+          <img src="./assets/images/ui.png" />
+          <span class="overlay">
+            <h2>Now You See</h2>
+            <h3>UI/UX</h3>
+            <a
+              href="https://www.figma.com/file/b1JoA9ec9QGGidxUo3YgnF/UX_Final?node-id=0%3A1"
+              class="project_link"
+              >Go To Project</a
+            >
+          </span> 
         </section>
         <section class="project_card">
           <img src="./assets/images/spotify.png" />
@@ -104,7 +115,7 @@
           </span>
         </section>
         <section class="project_card">
-          <img src="./assets/images/food.png" />
+          <img src="./assets/images/ocean.jpg" />
           <span class="overlay">
             <h2>Wordle</h2>
             <h3>React</h3>
@@ -115,19 +126,9 @@
             >
           </span>
         </section>
-        <section class="project_card">
-          <img src="./assets/images/food.png" />
-          <span class="overlay">
-            <h2>Wordle</h2>
-            <h3>React</h3>
-            <a
-              href="https://blissful-rosalind-a3611c.netlify.app/"
-              class="project_link"
-              >Go To Project</a
-            >
-          </span>
-        </section>
-      </div>
+   
+        </div>
+      </article>
     </section>
     <section id="contactme">
       <div class="line_break">
@@ -135,8 +136,8 @@
         <span class="section_title">Contact Me</span>
         <hr class="right1" />
       </div>
-      <section class="contact_details">
-        <section>
+      <section class="project_details">
+        <section class="contact_details">
         <label>Call Me</label>
         <a href="tel:xxx-xxxx" class="fa fa-phone"></a>
         <label>Email Me</label>
