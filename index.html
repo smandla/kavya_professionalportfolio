@@ -12,9 +12,10 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Kavya Mandla's Portfolio</title>
   </head>
   <body>
+    <!-- Header with name and nav links to different sections of the site-->
     <header class="header">
       <h1 class="name">kavya mandla</h1>
       <nav class="nav_links">
@@ -23,19 +24,26 @@
         <a href="#contactme">Contact Me</a>
       </nav>
     </header>
-    <section class="blank_header"></section>
-    <!-- Main Image is not being fully shown -->
-    <section class="main_image">
-      <img src="./assets/images/lotus.jpg" />
-    </section>
-    <section id="aboutme">
-      <div class="line_break">
-        <hr class="left1" />
-        <span class="section_title"> About Me </span>
-        <hr class="right1" />
-      </div>
 
+    <!-- Blank space so that full main image is shown on screen -->
+    <section class="blank_header"></section>
+
+    <!-- Lotus Image as landing page -->
+    <section class="main_image">
+      <img src="./assets/images/lotus.jpg" alt="image of Lotus Temple in New Delhi, India"/>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="aboutme">
+
+      <!-- Section Title-->
+      <div class="line_break">
+        <hr class="left" />
+        <span class="section_title"> About Me </span>
+        <hr class="right" />
+      </div>
       <article class="profile-details">
+        <!-- About Me Information with clickable and downloadable links-->
         <div>
           <h1>Hi, It's Kavya!</h1>
            <p>
@@ -45,9 +53,11 @@
             hike, travel, produce music, dance, and blog about new restaurants
             (@kavskravings).
           </p>
+          <!-- Downloadable link to Resume-->
           <a href="./assets/kavya_mandla_2022.pdf" download >
             <button class="project_link">Download Resume</button>
           </a>
+          <!-- Social Media links-->
           <nav class="media_links">
             <a href="https://facebook.com/kavya.mandla" class="fa fa-facebook"></a>
         
@@ -56,18 +66,19 @@
             <a href="https://soundcloud.com" class="fa fa-soundcloud"></a>
           </nav>
         </div>
-        
-        <section>
-          <img src="./assets/images/profile.jpeg" class="profile-image" />
+        <!--Portfolio Picture-->
+        <section class="profile_image_section">
+          <img src="./assets/images/profile.jpeg" class="profile-image" alt="Kavya Mandla in her cap and gown after receiving her B.S.C.S."/>
         </section>
-    
       </article>
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
       <div class="line_break">
-        <hr class="left1" />
+        <hr class="left" />
         <span class="section_title"> Projects </span>
-        <hr class="right1" />
+        <hr class="right" />
       </div>
       <article class="project_details">
        <div class="project_cards">
@@ -137,9 +148,9 @@
     </section>
     <section id="contactme">
       <div class="line_break">
-        <hr class="left1" />
+        <hr class="left" />
         <span class="section_title">Contact Me</span>
-        <hr class="right1" />
+        <hr class="right" />
       </div>
       <section class="project_details">
         <section class="contact_details">

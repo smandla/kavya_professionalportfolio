@@ -5,21 +5,24 @@
 :root {
   --dark-color: #1c6771;
   --light-color: #1e9ba7;
+  /** Starts rest of page after header **/
   scroll-padding-top: 80px;
 }
 body {
-  background-color: black;
-  max-width: 100%;
+  background-color: black; /* Set site background to black*/
+  max-width: 100%; /* Set max-width to 100% so site takes up width of screen*/
   height: 100%;
-  color: white;
-  overflow-x: hidden;
-  overflow: scroll;
-  scroll-padding-top: 80px;
+  color: white; /* Set text color to white unless stated otherwise*/
+  overflow-x: hidden; /* Hides extra space by not showing overflow*/
 }
+/* styling for all a tags by removing underline and changing color*/
 a {
   text-decoration: none;
   color: white;
 }
+
+/** Header Section **/
+
 .header {
   position: fixed;
   top: 0;
@@ -31,9 +34,6 @@ a {
   width: 100%;
   justify-content: space-between;
   background-color: black;
-  /* display: none; */
-  /* margin: s10%; */
-  /* padding: 0 69px 0 -66px; */
   z-index: 1000;
 }
 
@@ -58,12 +58,10 @@ a {
   border-radius: 32px;
   padding: 10px;
 }
-
+/* Allows for site to start after height of header so all information can be seen*/
 .blank_header {
-  /* position: absolute; */
   top: 0;
   width: 100%;
-  /* background-color: green; */
   height: 80px;
 }
 .main_image {
@@ -113,23 +111,6 @@ a {
   opacity: 0.7;
   /* border-radius: 32px; */
 }
-#aboutme {
-  position: relative;
-}
-#aboutme article {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-#aboutme section {
-  width: 50%;
-}
-#aboutme p {
-  font-size: 19px;
-  text-overflow: ellipsis;
-}
-
 .profile-image {
   width: 70%;
   /* height: 500px; */
@@ -138,13 +119,15 @@ a {
 }
 .profile-details {
   position: relative;
-  display: block;
-  flex-direction: row;
   width: 90%;
   background-color: var(--dark-color);
   margin: 0 auto;
   justify-content: center;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .profile-details div {
   background-color: #1e9ba7;
@@ -163,6 +146,13 @@ a {
   text-align: center;
   align-items: center;
 }
+.profile-details p {
+  font-size: 19px;
+  text-overflow: ellipsis;
+}
+.profile_image_section {
+  width: 50%;
+}
 .line_break {
   margin: 3rem 0;
   text-align: center;
@@ -174,11 +164,11 @@ a {
   margin-right: auto;
   border: 1px solid var(--light-color);
 }
-.left1 {
+.left {
   width: 10%;
   float: left;
 }
-.right1 {
+.right {
   width: 70%;
   float: right;
 }
@@ -280,11 +270,11 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .left1 {
+  .left {
     width: 10%;
     float: left;
   }
-  .right1 {
+  .right {
     width: 50%;
     float: right;
   }
