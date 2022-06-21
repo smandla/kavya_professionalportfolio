@@ -1,4 +1,4 @@
-# Module 2 Challenge - Professional Portfolio
+# Kavya's Professional Portfolio
 
 ## Advanced CSS - Week 2 Challenge
 
@@ -33,9 +33,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Usage
 
-### Website Image
+### Website Demo
 
-![alt text]()
+![alt text](assets/demo.gif)
 
 ### Code Before Example
 
