@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Description](#description)
+- [Languages](#languages)
 - [Deployed Link](#link)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,19 +14,12 @@
 
 ## Description
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+This portfolio includes an about me, projects, and contact me section. Users can navigate through the header links and learn more about me, the work I've recently done, and ways they can contact me. Users can hover over projects to see the title and link to the deployed project.
+
+## Languages
+
+- HTML
+- CSS
 
 ## Deployed Link
 
@@ -35,15 +29,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ### Website Demo
 
-![alt text](assets/demo.gif)
-
-### Code Before Example
-
-![alt text]()
-
-### Refactored Code Example
-
-![alt text]()
+![alt text](assets/demo1.gif)
 
 ## Credits
 
